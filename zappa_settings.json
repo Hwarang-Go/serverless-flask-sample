@@ -1,0 +1,16 @@
+{
+    "dev": {
+        "app_function": "src.main.app",
+        "aws_region": "[region name you want]",
+        "project_name": "[lambda name you want]",
+        "runtime": "python3.7",
+        "s3_bucket": "[s3 bucket name you want or your]",
+        "cors": true,
+        "timeout_seconds": 150,
+        "touch_path": "/phones",
+        "vpc_config": { 
+            "SubnetIds": [ "[your subnet id]" ], 
+            "SecurityGroupIds": [ "[security group]" ]
+        }
+    }
+}
